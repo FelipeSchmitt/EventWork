@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <link rel="stylesheet" href="css/horario.css">
+    <title>Marcar Horário</title>
+</head>
+<body>
+    <div id="menu"></div>
+    <div id="form">
+<h1>Agende um horário conosco</h1>
+<label>Qual o tipo de evento?</label>
+<select name="type-event" id="event_type">
+    <option value="casamento">Casamento</option>
+    <option value="festa_aniversario">Festa Aniversário</option>
+    <option value="festa_geral">Festa Geral</option>
+    <option value="show">Show</option>
+    <option value="other">Outro(especifique)</option>
+</select>
+<label>Observações:</label>
+<textarea name="" id="" cols="80" rows="18"></textarea>
+<label>Dia/Horário inicio</label>
+<input type="datetime-local"></input>
+<label>Horário de fim de evento:</label>
+<input type="time" id="time_end">
+    <button>Enviar pedido</button>
+    <br>
+</div>
+
+<script src="js/jquery.js"></script>
+<script> 
+    $(function(){
+      $("#menu").load("menu.html"); 
+    });
+
+</script>
+</body>
+</html>

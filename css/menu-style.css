@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+}
+header{
+    height: 80px;
+    width: 100%;
+    background-color: rgba(72, 139, 226, 0.808);
+}
+header img{
+    width: 85px;
+    height: 80px;
+    cursor: pointer;
+}
+#menu-drop{
+    margin-top: -4px;
+    height: 100%;
+    background-color: rgba(72, 139, 226, 0.98);
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 26px;
+    font-weight: 600;
+    position: absolute;
+    width: 100%;
+}
+#usericon{
+    float: right;
+    width: 70px;
+    height: 65px;
+    margin: 7px;
+}
+ul{
+    margin-top: 8%;
+    list-style: none;
+    margin-left: -40px;
+}
+li{
+    color: white;
+    padding: 30px;
+    font-weight: 500;
+}
+li:hover{
+    background-color: gold;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+@media screen and (max-width: 60em){
+ul{
+    margin-top: 20%;
+}
+}

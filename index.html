@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <link rel="stylesheet" href="css/index-style.css">
+    <title>Agência de Casamentos Samuel Rodrigues</title>
+</head>
+<body onload="slide1()">
+    <div id="menu"></div>
+    <hr>
+    <script src="js/menu.js"></script>
+    <section id="home">
+    <div class="content">
+    <div class="title">
+        Samuel Rodrigues Oficial
+    </div>
+    <div id="slider">
+        <img id="banner">
+    </div>
+    <script>
+        
+        var tempo = 3000;
+
+function slide1(){
+    document.getElementById("banner").src="images/slide1.jpg"
+    setTimeout("slide2()", tempo)
+}
+function slide2(){
+    document.getElementById("banner").src="images/slide2.jpg"
+    setTimeout("slide3()", tempo)
+}
+function slide3(){
+    document.getElementById("banner").src="images/slide3.jpg"
+    setTimeout("slide1()", tempo)
+}
+            
+</script>
+<div class="grid">
+<div class="text1">
+    <h2>Who is Samuel</h2>
+    <p>Loren Upson Loren UpsonLoren Upson Loren Upson Loren Upson Loren Upson Loren Upson Loren Upson
+        Loren Upson Loren UpsonLoren Upson Loren Upson Loren Upson Loren Upson Loren Upson Loren Upson
+        Loren Upson Loren UpsonLoren Upson Loren Upson Loren Upson Loren Upson Loren Upson Loren Upson
+        Loren Upson Loren UpsonLoren Upson Loren Upson Loren Upson Loren Upson Loren Upson Loren Upson
+    </p>
+    </div>
+<div class="img">
+    <img src="images/1.jpeg">
+</div>
+</div>
+</div>
+</section>
+<hr>
+<script src="js/jquery.js"></script>
+<script> 
+    $(function(){
+      $("#menu").load("menu.html"); 
+    });
+</script>
+</body>
+</div>
+</html>
